@@ -1,7 +1,3 @@
-# Tailnext
-
-**Tailnext** is a free and open-source template to make your website using **[NextJS](https://nextjs.org/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account best practices.
-
 ## Features
 
 - ✅ Integration with **Tailwind CSS** supporting **Dark mode**.
