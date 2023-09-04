@@ -42,9 +42,10 @@ import {
   TestimonialProps,
 } from './types';
 
-import cameraFrontImg from '~/assets/images/camera-front.jpg';
-import cameraBackImg from '~/assets/images/camera-back.jpg';
-import heroImg from '~/assets/images/hero.jpg';
+import cameraFrontImg from '~/assets/images/event1.jpg';
+import cameraBackImg from '~/assets/images/event2.jpg';
+import event3 from '~/assets/images/event3.jpg';
+import heroImg from '~/assets/images/hero3.jpg';
 import hero2Img from '~/assets/images/hero2.jpg';
 import gasImg from '~/assets/images/gas.jpg';
 import nextJsLogo from '~/assets/images/nextjs-logo.png';
@@ -52,67 +53,20 @@ import reactLogo from '~/assets/images/react-logo.png';
 import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
 import typescriptLogo from '~/assets/images/typescript-logo.png';
 
-// Announcement data
-export const announcementData: AnnouncementProps = {
-  title: 'NEW',
-  callToAction: {
-    text: 'This template is made with Next.js 13 using the new App Router »',
-    href: 'https://nextjs.org/docs/app',
-  },
-  callToAction2: {
-    text: 'Follow @onWidget on Twitter',
-    href: 'https://twitter.com/intent/user?screen_name=onwidget',
-  },
-};
-
 // Header data
 export const headerData: HeaderProps = {
   links: [
-    {
-      label: 'Pages',
-      icon: IconChevronDown,
-      links: [
-        {
-          label: 'About us',
-          href: '/about',
-        },
-        {
-          label: 'Pricing',
-          href: '/pricing',
-        },
-        {
-          label: 'Contact us',
-          href: '/contact',
-        },
-        {
-          label: 'FAQs',
-          href: '/faqs',
-        },
-        {
-          label: 'Privacy Policy',
-          href: '/privacy',
-        },
-        {
-          label: 'Terms & Conditions',
-          href: '/terms',
-        },
-      ],
-    },
     {
       label: 'Blog',
       href: '/blog',
     },
     {
-      label: 'Contact',
+      label: 'About',
       href: '/contact',
     },
-  ],
-  actions: [
     {
-      text: 'Download',
-      href: 'https://github.com/onwidget/tailnext',
-      targetBlank: true,
-      btnType: 'primary',
+      label: 'Contact',
+      href: '/contact',
     },
   ],
   isSticky: true,
@@ -125,36 +79,23 @@ export const headerData: HeaderProps = {
 export const heroData: HeroProps = {
   title: (
     <>
-      Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
-      <span className="sm:whitespace-nowrap">Tailwind CSS</span>
+      Unleash the power of technology and innovation 
     </>
   ),
   subtitle: (
     <>
-      <span className="hidden md:inline">
-        <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
-          TailNext
-        </span>{' '}
-        is a production ready template to start your new website using <em>Next.js</em> + <em>Tailwind CSS</em>.
-      </span>{' '}
-      It has been designed following Best Practices, SEO, Accessibility, Dark Mode, great Page Speed, image
-      optimization.
+      We are the ultimate fusion of minds, harmonizing ideas, and unleashing the full potential of technology.
     </>
   ),
   callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/onwidget/tailnext',
-    icon: IconDownload,
+    text: 'Join our community',
+    href: '#',
     targetBlank: true,
     btnType: 'primary',
   },
-  callToAction2: {
-    text: 'Learn more',
-    href: '/',
-  },
   image: {
     src: heroImg,
-    alt: 'Hero TailNext',
+    alt: 'Hero image',
   },
 };
 
@@ -177,32 +118,6 @@ export const hero2Data: HeroProps = {
     src: hero2Img,
     alt: 'Hero TailNext',
   },
-};
-
-// SocialProof data
-export const socialProofData: SocialProofProps = {
-  images: [
-    {
-      link: 'https://nextjs.org/',
-      src: nextJsLogo,
-      alt: 'NextJs Logo',
-    },
-    {
-      link: 'https://react.dev/',
-      src: reactLogo,
-      alt: 'React Logo',
-    },
-    {
-      link: 'https://tailwindcss.com/',
-      src: tailwindCssLogo,
-      alt: 'Tailwind CSS Logo',
-    },
-    {
-      link: 'https://www.typescriptlang.org/',
-      src: typescriptLogo,
-      alt: 'Typescript Logo',
-    },
-  ],
 };
 
 // FAQS data
@@ -478,71 +393,71 @@ export const featuresData: FeaturesProps = {
   header: {
     title: (
       <>
-        What you get with <span className="whitespace-nowrap">TailNext</span>
+        Why you should join us
       </>
     ),
     subtitle:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.',
+      'TechMpigo is a vibrant tech community that fosters collaboration, learning, and growth. Join us to unlock your full potential, connect with like-minded individuals, and embark on an extraordinary journey in the world of technology.',
     highlight: 'Features',
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
+      title: 'Mentorship & Support',
       description:
-        'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-      icon: IconBrandTailwind,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Ready-to-use Components',
-      description:
-        'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-      icon: IconComponents,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Best Practices',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-      icon: IconListCheck,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Excellent Page Speed',
-      description:
-        'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+        'Amplify Your Tech Career - Gain valuable mentorship and support through TechMpigos dedicated programs.',
       icon: IconRocket,
       link: {
-        label: 'Discover now',
+        label: '',
         href: '/',
       },
     },
     {
-      title: 'Search Engine Optimization (SEO)',
+      title: 'Events & Workshops',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-      icon: IconArrowsRightLeft,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Open to new ideas and contributions',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+        'Ignite Your Tech Journey through exciting events and workshops to fuel your passion for technology.',
       icon: IconBulb,
       link: {
-        label: 'Discover now',
+        label: '',
+        href: '/',
+      },
+    },
+    {
+      title: 'Projects & Collaboration',
+      description:
+        'Drive Innovation Together by collaborate with fellow tech enthusiasts on innovative projects.',
+      icon: IconListCheck,
+      link: {
+        label: '',
+        href: '/',
+      },
+    },
+    {
+      title: 'Knowledge Sharing',
+      description:
+        'We believe in the power of continuous learning and personal growth. we provide a platform for our members to their knowledge, expertise, resources, and experiences related to technology',
+      icon: IconRocket,
+      link: {
+        label: '',
+        href: '/',
+      },
+    },
+    {
+      title: 'Networking & Opportunities',
+      description:
+        'We facilitate networking and idea exchange. We also aim to connect our members with job opportunities in their specific niche',
+      icon: IconArrowsRightLeft,
+      link: {
+        label: '',
+        href: '/',
+      },
+    },
+    {
+      title: 'Social Impact & Diversity',
+      description:
+        'we are committed to making a positive social impact and promoting diversity and inclusion',
+      icon: IconBulb,
+      link: {
+        label: '',
         href: '/',
       },
     },
@@ -626,28 +541,19 @@ export const featuresData3: FeaturesProps = {
 // Content data
 export const contentData: ContentProps = {
   header: {
-    title: 'Aliquip definiebas ad est',
-    subtitle: 'Quando cetero his ne, eum admodum sapientem ut',
-    highlight: 'Content',
+    title: 'Our past events',
+    subtitle: '',
+    highlight: '',
   },
   content:
-    'Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.',
+    'Tech Skills - Other Non=-Coding Skills',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem libero expedita ea officiis molestias totam inventore.',
       description:
-        'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+        '',
     },
-    {
-      title: 'Cu imperdiet posidonium sed',
-      description:
-        'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
-    },
-    {
-      title: 'Nulla omittam sadipscing mel ne',
-      description:
-        'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
-    },
+    
   ],
   image: {
     src: cameraFrontImg,
@@ -660,26 +566,11 @@ export const contentData: ContentProps = {
 // Content2 data
 export const content2Data: ContentProps = {
   content:
-    'Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nib dissentias, mei exerci tamquam euripidis cu.',
+    'From Finding To Signing: Developers Guide.',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
-    },
-    {
-      title: 'Cu imperdiet posidonium sed',
-    },
-    {
-      title: 'Nulla omittam sadipscing mel ne',
-    },
-    {
-      title: 'Per ei quaeque sensibus',
-    },
-    {
-      title: 'Cu imperdiet posidonium sed',
-    },
-    {
-      title: 'Nulla omittam sadipscing mel ne',
-    },
+      title: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem libero expedita ea officiis molestias totam inventore.',
+    }
   ],
   image: {
     src: cameraBackImg,
@@ -687,6 +578,22 @@ export const content2Data: ContentProps = {
   },
   isReversed: true,
   isAfterContent: true,
+};
+
+export const content3Data: ContentProps = { 
+  content:
+    'Web Development: The Principle Behind It',
+  items: [
+    {
+      title: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem libero expedita ea officiis molestias totam inventore.',
+    }
+  ],
+  image: {
+    src: event3,
+    alt: 'Colorful Image',
+  },
+  isReversed: false,
+  isAfterContent: false,
 };
 
 // Steps data

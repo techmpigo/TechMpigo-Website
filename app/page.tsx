@@ -15,12 +15,12 @@ import CallToAction2 from '~/components/widgets/CallToAction2';
 import {
   callToActionData,
   content2Data,
+  content3Data,
   contentData,
   faqsData2,
   featuresData,
   heroData,
   pricingData,
-  socialProofData,
 } from '~/shared/data';
 import Contact from '~/components/widgets/Contact';
 
@@ -32,10 +32,10 @@ export default function Page() {
   return (
     <>
       <Hero data={heroData} />
-      <SocialProof {...socialProofData} />
       <Features3 {...featuresData} />
       <Content {...contentData} />
       <Content {...content2Data} />
+      <Content {...content3Data} />
       <Steps />
       <Testimonial />
       <FAQs2 {...faqsData2} />
