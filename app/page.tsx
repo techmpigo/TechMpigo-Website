@@ -41,8 +41,8 @@ export default function Page() {
       <Testimonial />
       {/* <Pricing {...pricingData} /> */}
       <Team />
-      <Contact />
-      <CallToAction2 {...callToActionData} />
+      {/* <Contact /> */}
+      {/* <CallToAction2 {...callToActionData} /> */}
     </>
   );
 }
