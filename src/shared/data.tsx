@@ -125,13 +125,13 @@ export const faqsData: FAQsProps = {
   header: {
     title: 'Frequently Asked Questions',
     subtitle:
-      'Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar.',
+      '',
     highlight: 'FAQS',
   },
   items: [
     {
-      title: 'Who we are and what we do?',
-      description: `Nunc mollis tempor quam, non fringilla elit sagittis in. Nullam vitae consectetur mi, a elementum arcu. Sed laoreet, ipsum et vehicula dignissim, leo orci pretium sem, ac condimentum tellus est quis ligula.`,
+      title: 'How do I know your community is right for me?',
+      description: `Because TechMpigo is a pulsating tech community that brings together individuals passionate about technology. So, join us to discover how we create a supportive environment for collaboration, knowledge sharing, and social impact in the tech industry.`,
     },
     {
       title: 'What values and principles guide our work?',

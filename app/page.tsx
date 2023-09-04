@@ -36,10 +36,10 @@ export default function Page() {
       <Content {...contentData} />
       <Content {...content2Data} />
       <Content {...content3Data} />
-      <Steps />
-      <Testimonial />
+      {/* <Steps /> */}
       <FAQs2 {...faqsData2} />
-      <Pricing {...pricingData} />
+      <Testimonial />
+      {/* <Pricing {...pricingData} /> */}
       <Team />
       <Contact />
       <CallToAction2 {...callToActionData} />
